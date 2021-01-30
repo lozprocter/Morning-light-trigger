@@ -16,7 +16,6 @@ schedule.every().day.at("07:00").do(relay_on)
 schedule.every().day.at("09:00").do(relay_off)
 
 #while True loop means that the code runs continuously
-#time.sleep function defines how long the light is kept on for
 while True:
   schedule.run_pending()
   time.sleep(1)
