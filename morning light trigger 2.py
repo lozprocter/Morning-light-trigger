@@ -12,7 +12,7 @@ def relay_off():
   relay.off()
 
 #this schedules the light to come on at 07:00am until 09:00am every day
-schedule.every().day.at("20:39").do(relay_on)
+schedule.every().day.at("20:50").do(relay_on)
 schedule.every().day.at("09:00").do(relay_off)
 
 #while True loop means that the code runs continuously
